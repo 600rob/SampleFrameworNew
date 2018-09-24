@@ -68,7 +68,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\Gender.cs" />
     <Compile Include="Pages\SampleAplicationPage.cs" />
+    <Compile Include="Pages\TestUser.cs" />
     <Compile Include="Pages\ultimateQAHomePage.cs" />
     <Compile Include="Tests\SampleApplicationPageTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,7 +80,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Utils\chromedriver.exe">
+    <Content Include="AutomationResources\chromedriver.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

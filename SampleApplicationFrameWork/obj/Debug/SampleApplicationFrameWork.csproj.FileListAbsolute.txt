@@ -13,7 +13,7 @@ H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWor
 H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\bin\Debug\nunit.framework.xml
 H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\bin\Debug\WebDriver.xml
 H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\bin\Debug\WebDriver.Support.xml
-H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\obj\Debug\SampleApplicationFrameWork.csprojResolveAssemblyReference.cache
 H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\obj\Debug\SampleApplicationFrameWork.dll
 H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\obj\Debug\SampleApplicationFrameWork.pdb
-H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\bin\Debug\Utils\chromedriver.exe
+H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\obj\Debug\SampleApplicationFrameWork.csprojResolveAssemblyReference.cache
+H:\Visual Studio 2015\Projects\C sharp automation code\SampleApplicationFrameWork\SampleApplicationFrameWork\bin\Debug\AutomationResources\chromedriver.exe
