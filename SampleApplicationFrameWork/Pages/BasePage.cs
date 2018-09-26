@@ -15,10 +15,34 @@ namespace SampleApplicationFrameWork
         //(i think referencing only works in VS2017)
         protected IWebDriver Driver;
 
-        public BasePage(IWebDriver driver)
+      //  public BasePage(IWebDriver driver)
+       // {
+            //this.Driver = driver;
+     //  }
+
+       [SetUp]
+        public void getChromeDriverBeforeEveryTest()
         {
-            this.Driver = driver;
-       }
+            WebDriverFactory factory = new WebDriverFactory();
+            Driver = factory.Create(BrowserType.Chrome);
+
+          
+        }
+
+
+
+      
+
+
+        [TearDown]
+        public void stopDriver()
+        {
+            Driver.Close();
+            Driver.Quit();
+
+
+
+        }
 
    
     }

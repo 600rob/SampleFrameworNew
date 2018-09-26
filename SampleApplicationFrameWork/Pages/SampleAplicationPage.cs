@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 
 namespace SampleApplicationFrameWork
 {
-    public class SampleAplicationPage : BasePage
+    public class SampleAplicationPage
     {
         // fields
         private string _sprint1Page = "https://www.ultimateqa.com/sample-application-lifecycle-sprint-1/ ";
@@ -13,7 +13,7 @@ namespace SampleApplicationFrameWork
         private string _sprint3Page = "https://www.ultimateqa.com/sample-application-lifecycle-sprint-3/";
         private string _sprint4Page = "https://www.ultimateqa.com/sample-application-lifecycle-sprint-4/";
         private IReadOnlyList<IWebElement> genderOptions;
-        
+        private IWebDriver Driver;
 
 
 
@@ -24,8 +24,15 @@ namespace SampleApplicationFrameWork
         public IWebElement eFirstNameField => Driver.FindElement(By.XPath("//p//input[@name='firstname']"));
         public IWebElement eLastNameField => Driver.FindElement(By.XPath("//p//input[@name='lastname']"));
         public IWebElement SubmitButton => Driver.FindElement(By.XPath("//input[@type='submit']"));
-        //constructor
-        public SampleAplicationPage(IWebDriver driver) :base(driver){}
+        //constructor. Using  This.Driver, sets our Driver object to the driver variable that gets passed
+        //in when creating a new page object...this is the Driver that we create in out base class!
+        // we could get rid of the this statment and just use a different driver instance, but this makes use of
+        //the DRY prinicple do the same on all other pages.
+        //could also inherit from the base page but we want to only do that on our test classes
+        public SampleAplicationPage(IWebDriver driver)
+        {
+            this.Driver = driver;  
+        }
 
 
         //page methods

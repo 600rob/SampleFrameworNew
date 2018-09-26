@@ -12,11 +12,11 @@ namespace SampleApplicationFrameWork
 {
     [TestFixture]
     //name your class somethign that represents a feature or PBI then put all the tests for that item in the class
-    public class SampleApplicationPageTests
+    public class SampleApplicationPageTests : BasePage
     {
 
 
-        private IWebDriver Driver;
+        //private IWebDriver Driver;
         private TestUser testUser;
         private TestUser testUser1;
         private TestUser eTestUser;
@@ -25,7 +25,7 @@ namespace SampleApplicationFrameWork
         [SetUp]
         public void initialiseTest()
         {
-            Driver = GetChromeDriver();
+            //Driver = GetChromeDriver();
             sampleApplicationPage = new SampleAplicationPage(Driver);
 
             testUser = new TestUser();
@@ -112,27 +112,27 @@ namespace SampleApplicationFrameWork
             AssertPageVisible(ultimateQAHomePage);
         }
 
-        [TearDown]
-        public void stopDriver()
-        {
-            Driver.Close();
-            Driver.Quit();
-       }
+       // [TearDown]
+//public void stopDriver()
+      //  {
+         //   Driver.Close();
+         //   Driver.Quit();
+     //  }
 
 
 
         //helper methods
 
 
-        private IWebDriver GetChromeDriver()
-       {
-            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+     //   private IWebDriver GetChromeDriver()
+     //  {
+//var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             //pass the path to our new driver
-            return new ChromeDriver(path);
+          //  return new ChromeDriver(path);
             
             //create an explicit wait for reuse
 
-        }
+      //  }
 
 
        

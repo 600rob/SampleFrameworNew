@@ -68,10 +68,12 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Pages\BasePage.cs" />
-    <Compile Include="Pages\Gender.cs" />
+    <Compile Include="AutomationResources\BrowserType.cs" />
+    <Compile Include="AutomationResources\Gender.cs" />
     <Compile Include="Pages\SampleAplicationPage.cs" />
-    <Compile Include="Pages\TestUser.cs" />
+    <Compile Include="AutomationResources\TestUser.cs" />
     <Compile Include="Pages\ultimateQAHomePage.cs" />
+    <Compile Include="AutomationResources\WebDriverFactory.cs" />
     <Compile Include="Tests\SampleApplicationPageTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
